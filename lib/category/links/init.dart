@@ -1,11 +1,11 @@
-part of category_links; 
- 
-// lib/category/links/init.dart 
- 
-initCategoryLinks(var entries) { 
-  _initCategories(entries); 
-} 
- 
+part of category_links;
+
+// lib/category/links/init.dart
+
+initCategoryLinks(var entries) {
+  _initCategories(entries);
+}
+
 _initCategories(var entries) {
   Categories categories = entries.categories;
   Concept categoryConcept = categories.concept;
@@ -14,20 +14,20 @@ _initCategories(var entries) {
   dartCategory.code = 'Dart';
   dartCategory.description = 'Web programming language';
   categories.add(dartCategory);
-  
+
   Concept linkConcept = dartCategory.links.concept;
-  
+
   Link dartHomeLink = new Link(linkConcept);
   dartHomeLink.code = 'Dart Home';
-  dartHomeLink.url = new Uri.fromString('http://www.dartlang.org/');
+  dartHomeLink.url = Uri.parse('http://www.dartlang.org/');
   dartHomeLink.description =
       'Dart is a new web language with libraries and tools.';
   dartHomeLink.category = dartCategory;
   dartCategory.links.add(dartHomeLink);
-  
+
   Link dartNewsLink = new Link(linkConcept);
   dartNewsLink.code = 'Dart News';
-  dartNewsLink.url = new Uri.fromString('http://news.dartlang.org/');
+  dartNewsLink.url = Uri.parse('http://news.dartlang.org/');
   dartNewsLink.description =
       'Official news from the Dart project.';
   dartNewsLink.category = dartCategory;
@@ -44,4 +44,4 @@ _initCategories(var entries) {
   css3Category.description = 'Cascading Style Sheets for the modern web.';
   categories.add(css3Category);
 }
- 
+

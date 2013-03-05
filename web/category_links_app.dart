@@ -25,8 +25,8 @@ main() {
   var repo = new CategoryRepo();
   var domainCode = CategoryRepo.categoryDomainCode;
   var modelCode = CategoryRepo.categoryLinksModelCode;
-  var models = repo.getDomainModels(domainCode); 
-  entries = models.getModelEntries(modelCode); 
+  var models = repo.getDomainModels(domainCode);
+  entries = models.getModelEntries(modelCode);
   categories = entries.categories;
   load();
 }

@@ -1,5 +1,5 @@
-// lib/category_links_app.dart 
- 
+// lib/category_links_app.dart
+
 /*
 http://opensource.org/licenses/
 
@@ -31,14 +31,14 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
- 
- 
-library category_links_app; 
- 
-import "dart:html"; 
-import "dart:math"; 
- 
-import "package:dartling/dartling.dart"; 
-import "package:dartling/dartling_app.dart"; 
- 
-import "package:category_links/category_links.dart"; 
+
+
+library category_links_app;
+
+import "dart:html";
+import "dart:math";
+
+import "package:dartling/dartling.dart";
+import "package:dartling/dartling_app.dart";
+
+import "package:category_links/category_links.dart";

@@ -26,7 +26,7 @@ class LinkAdd extends WebComponent {
     if (!error) {
       var link = new Link(links.concept);
       link.code = code.value;
-      link.url = new Uri.fromString(webLink.value);
+      link.url = Uri.parse(webLink.value);
       link.description = description.value;
       link.category = category;
       if (links.add(link)) {

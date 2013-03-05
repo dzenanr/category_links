@@ -1,5 +1,5 @@
-// lib/category_links.dart 
- 
+// lib/category_links.dart
+
 /*
 http://opensource.org/licenses/
 
@@ -31,27 +31,27 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
- 
- 
-library category_links; 
- 
-import "dart:json"; 
-import "dart:math"; 
-import "dart:uri"; 
- 
-import "package:dartling/dartling.dart"; 
- 
-part "category/links/json/data.dart"; 
-part "category/links/json/model.dart"; 
- 
-part "category/links/init.dart"; 
- 
-part "category/links/categories.dart"; 
-part "category/links/links.dart"; 
- 
-part "gen/category/links/entries.dart"; 
-part "gen/category/links/categories.dart"; 
-part "gen/category/links/links.dart"; 
- 
-part "gen/category/models.dart"; 
+
+
+library category_links;
+
+import "dart:json";
+import "dart:math";
+import "dart:uri";
+
+import "package:dartling/dartling.dart";
+
+part "category/links/json/data.dart";
+part "category/links/json/model.dart";
+
+part "category/links/init.dart";
+
+part "category/links/categories.dart";
+part "category/links/links.dart";
+
+part "gen/category/links/entries.dart";
+part "gen/category/links/categories.dart";
+part "gen/category/links/links.dart";
+
+part "gen/category/models.dart";
 part "gen/category/repository.dart";
