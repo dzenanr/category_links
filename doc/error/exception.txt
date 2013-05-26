@@ -15,4 +15,6 @@ abstract class EntitiesApi<E extends EntityApi<E>> implements Iterable<E>
 works when
 abstract class EntitiesApi<E extends EntityApi<E>> { // implements Iterable<E>
 
+https://docs.google.com/document/d/14mrM_-KuHP5XiXjGErD1B7BFsHnzaBidHoE0f3iXg4Y/edit?usp=sharing
+
 ---
