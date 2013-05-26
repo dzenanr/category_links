@@ -1,0 +1,18 @@
+Exceptions
+
+---
+
+class CategoryTable extends WebComponent {
+  Categories categories;
+  
+  red arrow points to Categories categories;
+
+Breaking on exception: type 'List<Category>' is not a subtype of type 'Categories' of 'value'.
+
+exception when
+abstract class EntitiesApi<E extends EntityApi<E>> implements Iterable<E>
+
+works when
+abstract class EntitiesApi<E extends EntityApi<E>> { // implements Iterable<E>
+
+---
