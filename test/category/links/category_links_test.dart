@@ -88,30 +88,30 @@ testCategoryLinks(Repo repo, String domainCode, String modelCode) {
       dartLinkCount = 0;
     });
     test('Find category and link by code', () {
-      Category dartCategory = categories.findByCode('Dart');
+      Category dartCategory = categories.singleWhereCode('Dart');
       expect(dartCategory, isNotNull);
       expect(dartCategory.code, equals('Dart'));
 
       Links dartLinks = dartCategory.links;
       expect(dartLinks.length, equals(dartLinkCount));
-      Link dartHomeLink = dartLinks.findByCode('Dart Home');
+      Link dartHomeLink = dartLinks.singleWhereCode('Dart Home');
       expect(dartHomeLink, isNotNull);
       expect(dartHomeLink.code, equals('Dart Home'));
     });
-    test('Order categories by code', () {
-      categories.order();
-      categories.display(title: 'Order categories by code');
+    test('Sort categories by code', () {
+      categories.sort();
+      categories.display(title: 'Sort categories by code');
     });
-    test('Order Dart links by code', () {
-      Category dartCategory = categories.findByCode('Dart');
+    test('Sort Dart links by code', () {
+      Category dartCategory = categories.singleWhereCode('Dart');
       expect(dartCategory, isNotNull);
       Links dartLinks = dartCategory.links;
       expect(dartLinks.length, equals(dartLinkCount));
-      dartLinks.order();
-      dartLinks.display(title:'Ordered Dart links by code');
+      dartLinks.sort();
+      dartLinks.display(title:'Sorted Dart links by code');
     });
     test('New link with no category errors', () {
-      Category dartCategory = categories.findByCode('Dart');
+      Category dartCategory = categories.singleWhereCode('Dart');
       expect(dartCategory, isNotNull);
 
       var dartHomeLink = new Link(linkConcept);

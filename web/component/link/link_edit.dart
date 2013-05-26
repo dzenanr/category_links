@@ -22,7 +22,7 @@ class LinkEdit extends WebComponent {
     if (!error) {
       link.url = Uri.parse(webLink.value);
       link.description = description.value;
-      var linkTable = document.query('x-link-table').xtag;
+      var linkTable = document.query('#link-table').xtag;
       linkTable.showLinkEdit = false;
     }
   }
