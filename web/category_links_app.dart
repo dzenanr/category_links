@@ -22,12 +22,16 @@ save() {
 }
 
 main() {
-  var repo = new CategoryRepo();
-  var domainCode = CategoryRepo.categoryDomainCode;
-  var models = repo.getDomainModels(domainCode);
-  var modelCode = CategoryRepo.categoryLinksModelCode;
-  entries = models.getModelEntries(modelCode);
-  categories = entries.categories;
-  load();
+  try {
+    var repo = new CategoryRepo();
+    var domainCode = CategoryRepo.categoryDomainCode;
+    var models = repo.getDomainModels(domainCode);
+    var modelCode = CategoryRepo.categoryLinksModelCode;
+    entries = models.getModelEntries(modelCode);
+    categories = entries.categories;
+    load();
+  } catch (exception, stackTrace) {
+    print("$exception $stackTrace");    
+  }
 }
 
